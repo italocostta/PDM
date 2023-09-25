@@ -12,7 +12,7 @@
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Acerte o número!"
+        android:text="@string/acerte_o_n_mero"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,11 +49,12 @@
         app:layout_constraintVertical_bias="0.218" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="296dp"
-        android:layout_height="106dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.366">
@@ -61,7 +62,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/chuteTextInput"
             android:layout_width="match_parent"
-            android:layout_height="106dp"
+            android:layout_height="match_parent"
             android:hint="Digite um numero"
             android:inputType="number"
             tools:ignore="HardcodedText" />
@@ -71,7 +72,7 @@
         android:id="@+id/botaoChutar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chutar"
+        android:text="@string/chutar"
         android:textColorHighlight="#009688"
         android:textColorLink="#FF0303"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,7 +85,7 @@
         android:id="@+id/jogoStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jogo em execução. Segure para reiniciar."
+        android:text="@string/jogo_em_execu_o_segure_para_reiniciar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,6 +103,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
