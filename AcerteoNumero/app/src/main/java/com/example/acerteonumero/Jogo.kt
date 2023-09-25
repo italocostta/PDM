@@ -28,11 +28,9 @@ class Jogo {
             numero < valorSorteado -> {
                 menor = numero + 1
             }
-            numero > valorSorteado -> {
+            else /* numero > valorSorteado */ -> {
                 maior = numero - 1
             }
-
-            else -> maior = numero - 1
         }
     }
 
